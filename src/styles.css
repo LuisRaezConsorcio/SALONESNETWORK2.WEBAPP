@@ -1,1 +1,586 @@
-/* You can add global styles to this file, and also import other style files */
+
+.Loading {
+	background-color:#CF4342;
+	color:#fff;
+	top:0px;
+	right:0px;
+	position:fixed;
+  }
+ 
+ .Loading img {
+	vertical-align:middle;
+	margin:1px;
+ }
+ body {
+	 FONT-FAMILY: Tahoma;
+	 FONT-SIZE: 10px;
+	 border-spacing: 2px;
+	 empty-cells: hide;
+	 caption-side: top;
+	 border-collapse: collapse;
+	 table-layout: inherit;
+ }
+ .Cuerpo1
+ {
+	 vertical-align: top;
+	 line-height: normal;
+	 text-align: left;
+	 white-space: inherit;
+	 margin: 0px;
+	 border-spacing: 0px;
+ }
+ .tlogueousuario
+ {
+	 caption-side: top;
+	 empty-cells: inherit;
+	 border-collapse: inherit;
+	 table-layout: inherit;
+	 background-color: #F0F0F8;
+	 text-align: justify;
+	 top: auto;
+	 width: 100%;
+	 margin-bottom: 0px;
+	 margin-left: 0px;
+ }
+ .tlogueousuario1
+ {
+	 border: thin #696969 none;
+	 caption-side: top;
+	 empty-cells: inherit;
+	 border-collapse: inherit;
+	 table-layout: inherit;
+	 background-color: #F0F0F8;
+	 top: auto;
+	 width: 100%;
+ }
+ .diveditor
+ {
+	 background-color: #E0DFE3;
+	 border: 1px #696969 solid;
+	 margin: 0 auto 0 auto;
+	 text-align: left;
+	 display : none;
+	 width: 584px;
+ }
+ .tblasuntosazul
+ {
+	 padding: 25px 0 35px 0;
+	 color : #003399;
+	 text-align : center;
+	 font-weight : bold;
+	 font-size : 12px;
+ }
+ .btnseccion 
+ {
+	 height:50px;
+	 width :150px;
+	 padding-left :5px;
+	 padding-right :5px;
+	 font-size :11px;
+	 font-weight :bold ;
+	 font-style :normal ;
+ }
+ .tblseccion
+ {
+	 background : #FFEEDD;
+	 padding-left: 0px;
+	 padding-top: 0px;
+	 text-align : center;
+	 width: 82%;
+	 white-space: inherit;
+ }
+ .tblseccioncbesera
+ {
+	  padding: 3px 0 5px 0;
+	  background :#922D2A;
+	  color :#FFFFFF;
+	  text-align : center;
+ }
+ .textParametro
+ {
+	  display :none;
+ }
+ .button 	
+ {
+	 
+		 DISPLAY: block;	
+		 FONT-WEIGHT: bold;		
+		 MARGIN-BOTTOM: 14px;	
+		 WIDTH: 150px;	
+		 COLOR: #555555;	
+		 LINE-HEIGHT: 29px;	
+		 HEIGHT: 35px;	
+		 TEXT-DECORATION: none;
+		 font-weight :bold ;
+ }
+ .refresh	
+ {
+		 DISPLAY: block;						
+		 HEIGHT: 37px;
+		 WIDTH: 39px;
+		 TEXT-DECORATION: none;
+ }
+ td.text_respuesta A:link 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ }
+ td.text_respuesta A:visited 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ }
+ td.text_respuesta A:active 
+ {
+	 text-decoration:none;
+	 color:#FF0000; 
+	 font-size :11px;
+ }
+ td.text_respuesta A:hover 
+ {
+	 text-decoration:none;
+	 color:#DA3838; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ } 
+ 
+ div.nuevomensaje A:link 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ }
+ div.nuevomensaje A:visited 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ }
+ div.nuevomensaje A:active 
+ {
+	 text-decoration:none;
+	 color:#FF0000; 
+	 font-size :11px;
+ }
+ div.nuevomensaje A:hover 
+ {
+	 text-decoration:none;
+	 color:#DA3838; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ } 
+ 
+ td.text_respuesta td 
+ {	 
+	  height :35px;
+	 font-size: x-small;
+ }
+ td.text_respuesta a
+ {
+	 padding-right :2px;
+	 padding-left :15px;
+	 
+ }
+ .parte2
+ {
+	 background: #f0ffff ;
+	 padding: 0px;
+	 margin: 0px;
+	 float: left;
+	 width: 850px;
+ }
+ .tprogreso
+ {
+	 width: 100%;
+ }
+ .grillanoticias
+ {
+	 background: #f0f9ff;
+	 font-size: small;
+	 cursor : text;
+	 text-align: center;
+	 width: 999px;
+ }
+ 
+ .grillanoticias a
+ {
+	  text-decoration :none;
+	  text-align :left;      
+ }
+ .grillanoticias th
+ {
+	   padding-left :5px;
+ }
+ 
+ .grillanoticias td
+ {
+		padding-top :5px;
+ }
+ .gestilonoticias
+ {
+	 background-color:#DDEEFF;
+ }
+ .gestilosalas
+ {
+	 background-color:#FFF8F0;
+ }
+ 
+ .irapag{
+	 font-size:x-small;
+	 width:20px;
+ }
+ .anterior{
+	 height:1.3em;
+	 width:16px;
+	 cursor:pointer;
+	 
+ }
+ .siguiente{
+	 height:1.3em;
+	 width:16px;
+	 cursor:pointer;
+	 
+ }
+ .primero{
+	 height:1.3em;
+	 width:16px;
+	 cursor:pointer;
+	 
+ }
+ .ultimo{
+	 height:1.3em;
+	 width:16px;
+	 cursor:pointer;
+	 
+ }
+ .tblcontenido
+  {
+	 text-decoration :none;
+	 font-size :11px;
+	 cursor :text;
+	 color :Black ;
+ } 	
+   .tblcontenidorespuesta
+   {
+	   text-decoration :none;
+	 font-size :11px;
+	 cursor :text;
+	 color :Black ;
+	 border: 1px solid #ffeedd;
+	 border-collapse: collapse;
+   }
+	 .tblcontenidorespuestasunto
+   {
+	   text-decoration :none;
+	 font-size :11px;
+	 cursor :text;
+	 color :Black ;
+	 border: 1px solid #7C7F78;
+	 border-collapse: collapse;
+   }
+   .tblcontenidorespuesta td
+   {
+	padding-left :10px;
+	font-size :11px;	
+   }
+ td.text_contenido 
+ {
+	 padding-left :10px;
+	 padding-right :10px;
+	 padding-top :5px;
+	 padding-bottom :5px;
+	 font-size :11px;	
+ }
+ .tblopciones
+ {
+		margin:top;
+		height : 10%;
+ }
+ .tblopciones td
+ {
+		padding-bottom :15px;
+		padding-left :10px;
+ }
+ .tblopciones A:link 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :11px;
+  }
+ .tblopciones A:visited 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ }
+ .tblopciones A:active 
+ {
+	 text-decoration:none;
+	 color:#FF0000; 
+	 font-size :11px;
+ }
+ .tblopciones A:hover 
+ {
+	 text-decoration:none;
+	 color:#DA3838; 
+	 font-weight :bold ; 
+	 text-decoration :underline; 
+	 font-size :11px;
+ } 
+ .CuerpoPaices
+ {
+	 caption-side: top;
+	 empty-cells: inherit;
+	 border-collapse: inherit;
+	 table-layout: inherit;
+	 top: auto;
+	 width: 80%;
+ }
+ .tblpaises
+ {
+	 text-decoration:none;
+	 color:#922D2A; 
+	 font-weight :bold ; 
+	 font-size :11px;
+ }
+ .tblseccionPaises
+ {
+	 background : #FFEEDD;
+	 border: medium #000000 double;
+	 padding-left: 0px;
+	 padding-top: inherit;
+	 width: 82%;
+	 white-space: inherit;
+	 margin-bottom: 0px;
+ }
+ .AsuntosCabecera
+		 {
+			 font-weight: 700;
+			  font-size: small; 
+			  width :100%;
+			  text-align:center;
+			  background-color :#FFFFFF;
+		 }
+ .tasuntosg
+ {
+	 border: 1px #333333 solid;
+	 width: 95%;
+	 border-spacing: 1;
+ }
+ .AsuntosDetalle
+ {
+	 width : 100%;
+	 text-align: center;
+	 background-color: #eeddcc;
+ }
+ .grillasala
+ {
+	 /* background: #ffeedd;*/
+	 font-size : 12px;
+	 margin : 5,2,5,2;
+	 padding : 5,10,5,2;
+	 background-color: #FFEEDD;
+ }
+ 
+ .grillasala a
+ {
+	  text-decoration :none;
+	  text-align :left;      
+ }
+ .grillasala th
+ {
+	   padding-left :2px;
+ }
+ 
+ .grillasala td
+ {
+		padding-top :2px;
+ }
+ .EstiloTema
+ {
+	 color: #922D2A;
+	 font-size: medium ;
+	 font-weight: bold;
+ }
+ .FondoSala
+ {
+	 background-color :#ffeedd;
+ }
+ .btnsala 
+ {
+	 /*height:50px;*/
+	 width :100px;
+	 /*padding-left :5px;
+	 padding-right :5px;*/
+	 font-size :11px;
+	 font-weight :bold ;
+	 font-style :normal;
+ }
+ .marco
+ {
+	 background:#DA3838; 
+ }
+ .tope
+ {
+	 vertical-align: top;
+ }
+ .Colaboradores
+ {
+	 font-size: small;
+	 vertical-align: middle;
+	 text-align: center;
+	 background: #99CCFF;
+	 margin: 5;
+	 padding-top: 5;
+	 border: thick #FFFFFF outset;
+	 height: 20px;
+	 color: #000000;
+	 font-weight: 700;
+ }
+ .tblpais
+ {
+	 background: #FFEEDD;
+	 text-align: left;
+	 vertical-align: top;
+ }
+ .btnpaises
+ {
+	 font-size :11px;
+	 font-weight :bold ;
+	 font-style :normal ;
+ }
+ .divventana
+ {
+	 position:absolute;
+	 width:584px;
+	 background: #CCC7BA;
+ }
+ 
+ td.textlinks A:link 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold; 
+	 font-size :x-small;
+ }
+ td.textlinks A:visited 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :10px;
+ }
+ td.textlinks A:active 
+ {
+	 text-decoration:none;
+	 color:#FF0000; 
+	 font-size :10px;
+ }
+ td.textlinks A:hover 
+ {
+	 text-decoration:none;
+	 color:#DA3838; 
+	 font-weight :bold ; 
+	 font-size :10px;
+ } 
+ 
+ td.textlinks td 
+ {	 
+	  height :20px;
+	 font-size: x-small;
+ }
+ td.textlinks a
+ {
+	 padding-right :2px;
+	 padding-left :15px;
+	 
+ }
+ .Asunto
+ {
+	 background-color: #eeddcc;
+ }
+ .divpaginas A:link 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold; 
+	 font-size :x-small;
+ }
+ .divpaginas A:visited 
+ {
+	 text-decoration:none;
+	 color:#000000; 
+	 font-weight :bold ; 
+	 font-size :10px;
+ }
+ .divpaginas A:active 
+ {
+	 text-decoration:none;
+	 color:#FF0000; 
+	 font-size :10px;
+ }
+
+ .botonIr
+ {
+	 height:20px;
+	 width:40px;
+	 cursor:pointer;
+ }
+
+ .divpaginas A:hover 
+ {
+	 text-decoration:none;
+	 color:#DA3838; 
+	 font-weight :bold ; 
+	 font-size :10px;
+ } 
+ 
+ 
+ /*Definimos ancho de mensaje para overflow-x */
+ 
+ .max-td
+ {
+ overflow-x: auto;
+ max-width: 589px;
+ }
+ 
+ @media only screen and (min-width:1070px )
+ {
+  .max-td
+ { 
+ max-width: 600px;
+ }
+ }
+ 
+ 
+ @media only screen and (min-width:1200px )
+ {
+  .max-td
+ { 
+ max-width: 700px;
+ }
+ }
+ 
+ @media only screen and (min-width:1400px )
+ {
+  .max-td
+ { 
+ max-width: 800px;
+ }
+ }
+ 
+ @media only screen and (min-width:1700px )
+ {
+  .max-td
+ { 
+ max-width: 1000px;
+ }
+ }
