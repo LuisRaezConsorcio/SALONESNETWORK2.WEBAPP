@@ -7,7 +7,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class MessageService {
 
-  post: Post[] = [
+  posts: Post[] = [
 
     {
       "id": 1,
@@ -12647,12 +12647,17 @@ export class MessageService {
     }
   ]
 
-
-  private postSubject = new BehaviorSubject<Post[]>(this.post); // Inicializa con un array vacío
+  //para Noticias
+  private postSubject = new BehaviorSubject<Post[]>(this.posts); // Inicializa con un array vacío
   post$ = this.postSubject.asObservable(); // Exponemos el observable
+  
+  getPosts(): Observable<Post[]> {
+    return this.post$; // Retorna el observable
+  }
 
   constructor() { }
 
+  //para paises
   private selectedPostIdSubject = new BehaviorSubject<number | null>(null);
   selectedPostId$ = this.selectedPostIdSubject.asObservable();
 
@@ -12662,25 +12667,25 @@ export class MessageService {
 
   getPostById(postId: number): Post | undefined {
 
-    return this.post.find((post) => post.id === postId);
+    return this.posts.find((post) => post.id === postId);
   }
+
+
+
 
 
   private selectedDataSubject = new BehaviorSubject<{ postId: number; paisId: number } | null>(null);
   selectedData$ = this.selectedDataSubject.asObservable();
 
   setSelectedData(postId: number, paisId: number): void {
+    console.log('post: '+postId, 'pais: '+ paisId)
     this.selectedDataSubject.next({ postId, paisId });
   }
 
-
-
-  
-
   // Obtener un país por su ID
-  getPaisById(postId: number, paisId: number): Pais | null {
-    const post = this.post.find((p) => p.id === postId);
-    return post ? post.pais.find((pais) => pais.id === paisId) || null : null;
+  getPaisById(postId: number, paisId: number): Pais | undefined {
+    const post = this.posts.find((p) => p.id === postId);
+    return post ? post.pais.find((pais) => pais.id === paisId) : undefined;
   }
 
 
@@ -12698,12 +12703,5 @@ export class MessageService {
     return seccion ? seccion.subseccion.find((subseccion) => subseccion.id === subseccionId) || null : null;
   }
 
-  // Actualizar la lista de posts (si fuera necesario)
-  updatePosts(newPosts: Post[]): void {
-    this.postSubject.next(newPosts);
-  }
 
-  getPosts(): Observable<Post[]> {
-    return this.post$; // Retorna el observable
-  }
 }

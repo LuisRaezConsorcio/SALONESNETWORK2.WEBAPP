@@ -19,7 +19,6 @@ export class PaisComponent implements OnInit {
   ngOnInit(): void {
     this.messageService.selectedPostId$.subscribe((id) => {
       this.postId = id;
-      console.log('Post ID recibido en Pais:', this.postId);
     });
   }
 

@@ -19,7 +19,6 @@ export class AsuntosComponent implements OnInit {
   constructor(private router: Router, private activatedRoute:ActivatedRoute, private messageService: MessageService){}
 
   ngOnInit(): void {
-   console.log(this.data)
    if (this.data) {
     this.groupedData = this.groupIntoRows(this.data, 4); // Agrupa en filas de 4
   }
@@ -36,7 +35,6 @@ export class AsuntosComponent implements OnInit {
   }
 
   getSeccionAsunto(postId: number): void {
-    console.log(`Asunto seleccionado: ID=${postId}`);
     this.messageService.setSelectedPostId(postId); // Enviar el post ID al servicio
     this.router.navigate(['Home', 'Pais']); // Redirigir al componente pais
   }

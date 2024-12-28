@@ -11,48 +11,51 @@ import { Router } from '@angular/router';
 })
 export class SubseccionComponent implements OnInit {
   @Input() postId!: number | null;
+  @Input() paisId!: number | null;
+  @Input() fromPais!: boolean;
+
   postName!: string | null;
-  subseccionData: any;
-  
+  arrayPais: any;
+  arraySeccion: any;
+
 
   constructor(private messageService: MessageService, private router: Router) { }
 
   ngOnInit(): void {
     if (this.postId !== null) {
-      const post = this.messageService.getPostById(this.postId);
-      if (post) {
-        this.postName = post.name;
-        this.subseccionData = post.pais; // Obtén los países del post
-        console.log('Datos del post seleccionado:', this.postName);
-        console.log('Datos del post seleccionado:', this.subseccionData);
-      }
-    }
-
-    this.messageService.selectedData$.subscribe((data) => {
-      if (data) {
-        const post = this.messageService.getPostById(data.postId);
+      if (this.fromPais) {
+        const post = this.messageService.getPostById(this.postId);
         if (post) {
-          const pais = post.pais.find((p) => p.id === data.paisId);
-          if (pais) {
-            this.subseccionData = pais.seccion; // Información de las secciones del país
-            console.log('Datos de subsección:', this.subseccionData);
-          }
+          this.postName = post.name;
+          this.arrayPais = post.pais; // Obtén los países del post
+          console.log('Datos del post seleccionado:', this.postName);
+          console.log('Datos del post seleccionado:', this.arrayPais);
         }
       }
-    });
+      else {
+
+        if (this.paisId !== null) {
+          const post = this.messageService.getPostById(this.postId);
+          const pais = this.messageService.getPaisById(this.postId, this.paisId);
+          if(post){
+            if (pais) {
+              this.postName=post.name;
+              this.arraySeccion = pais.seccion
+              console.log('Datos del post seleccionado:', this.arraySeccion);
+  
+            }
+          }
+          
+        }
+      }
+    }
   }
 
-  // getSeccionAsunto(paisId: number): void {
-  //   if (this.postId !== null) {
-  //     console.log(this.messageService.getPaisById(this.postId, paisId)); // Enviar el post ID al servicio
-  //     this.router.navigate(['Home', 'Pais', 'Seccion']); // Redirigir al componente pais
-  //   }
-  // }
-
-  getSeccionAsunto(postId: number, paisId: number): void {
-    this.messageService.setSelectedData(postId, paisId);
+  getSeccionAsunto(paisId: number): void {
+    this.messageService.setSelectedData(this.postId!, paisId);
     this.router.navigate(['Home', 'Seccion']);
   }
+
 
 
 }
