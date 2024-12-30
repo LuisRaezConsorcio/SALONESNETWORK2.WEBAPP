@@ -1,2 +1,2 @@
-<p>seccion works!</p>
-<app-subseccion [fromPais]="false" [postId]="postId" [paisId]="paisId"></app-subseccion>
+<app-subseccion  *ngIf="!isMessagesRoute" [fromPais]="false" [postId]="postId" [paisId]="paisId"></app-subseccion>
+<router-outlet></router-outlet>

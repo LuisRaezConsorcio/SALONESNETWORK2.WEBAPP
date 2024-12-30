@@ -1,0 +1,28 @@
+.ultimo {
+    background: transparent url(https://salonesnetwork.com/AppSalones/resource/images/last.gif) no-repeat scroll center;
+    height: 1.3em;
+    width: 16px;
+    cursor: pointer;
+}
+
+.siguiente {
+    background: transparent url(https://salonesnetwork.com/AppSalones/resource/images/next.gif) no-repeat scroll center;
+    height: 1.3em;
+    width: 16px;
+    cursor: pointer;
+}
+
+.primero {
+    background: transparent url(https://salonesnetwork.com/AppSalones/resource/images/first.gif) no-repeat scroll center;
+    height: 1.3em;
+    width: 16px;
+    cursor: pointer;
+}
+
+.anterior {
+    background: transparent url(https://salonesnetwork.com/AppSalones/resource/images/previous.gif) no-repeat scroll center;
+    height: 1.3em;
+    width: 16px;
+    cursor: pointer;
+}
+

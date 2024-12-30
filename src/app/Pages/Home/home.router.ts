@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router'
+import { MensajesComponent } from './mensajes/mensajes.component';
 
 export default [
     {
@@ -24,19 +25,25 @@ export default [
                     import('./pais/pais.component').then((m) => m.PaisComponent),
             },
             {
-                path: 'Seccion',
-                data: { breadcrumb: 'Seccion' },
+                path: 'Secciones',
+                data: { breadcrumb: 'Secciones' },
 
                 loadComponent: () =>
                     import('./seccion/seccion.component').then((m) => m.SeccionComponent),
+                children: [
+                  {
+                    path: 'Mensajes',
+                    component:MensajesComponent
+                  }
+                ]
             },
-            {
-                path: 'Mensajes',
-                data: { breadcrumb: 'Mensajes' },
+            // {
+            //     path: 'Mensajes',
+            //     data: { breadcrumb: 'Mensajes' },
 
-                loadComponent: () =>
-                    import('./mensajes/mensajes.component').then((m) => m.MensajesComponent),
-            }
+            //     loadComponent: () =>
+            //         import('./mensajes/mensajes.component').then((m) => m.MensajesComponent),
+            // }
 
         ]
     },

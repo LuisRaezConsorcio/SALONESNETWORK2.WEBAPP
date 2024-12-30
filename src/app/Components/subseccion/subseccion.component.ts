@@ -15,6 +15,7 @@ export class SubseccionComponent implements OnInit {
   @Input() fromPais!: boolean;
 
   postName!: string | null;
+  paisName!: string | null;
   arrayPais: any;
   arraySeccion: any;
 
@@ -40,6 +41,7 @@ export class SubseccionComponent implements OnInit {
           if(post){
             if (pais) {
               this.postName=post.name;
+              this.paisName=pais.name;
               this.arraySeccion = pais.seccion
               console.log('Datos del post seleccionado:', this.arraySeccion);
   
@@ -51,9 +53,18 @@ export class SubseccionComponent implements OnInit {
     }
   }
 
+  goSeccion(paisId: number): void {
+    this.messageService.setSelectedData(this.postId!, paisId);
+    this.router.navigate(['Home', 'Secciones']);
+  }
+
   getSeccionAsunto(paisId: number): void {
     this.messageService.setSelectedData(this.postId!, paisId);
-    this.router.navigate(['Home', 'Seccion']);
+    this.router.navigate(['Home', 'Secciones']);
+  }
+
+  goToMensajes(): void {
+    this.router.navigateByUrl('/Home/Secciones/Mensajes');
   }
 
 
